@@ -8,6 +8,6 @@
 import Foundation
 
 final class SecretEnv {
-    /// APIKey
+    /// APIKey追加
     static let apiKey = ""
 }
