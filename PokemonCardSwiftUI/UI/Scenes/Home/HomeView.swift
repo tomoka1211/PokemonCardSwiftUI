@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  PokemonCardSwiftUI
 //
 //  Created by hirano_tomoka on 2022/12/12.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("ホームは作成中だよ〜")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

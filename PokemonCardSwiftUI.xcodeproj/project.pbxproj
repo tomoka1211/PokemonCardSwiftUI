@@ -8,17 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		632A9A192946EC3400448073 /* PokemonCardSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A182946EC3400448073 /* PokemonCardSwiftUIApp.swift */; };
-		632A9A1B2946EC3400448073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A1A2946EC3400448073 /* ContentView.swift */; };
 		632A9A1D2946EC3600448073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632A9A1C2946EC3600448073 /* Assets.xcassets */; };
 		632A9A202946EC3600448073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632A9A1F2946EC3600448073 /* Preview Assets.xcassets */; };
+		632A9A282946F2D400448073 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 632A9A272946F2D400448073 /* Alamofire */; };
+		632A9A2F2946F40800448073 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A2E2946F40800448073 /* Card.swift */; };
+		632A9A312946F82A00448073 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A302946F82A00448073 /* CardType.swift */; };
+		632A9A332946F84100448073 /* SuperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A322946F84100448073 /* SuperType.swift */; };
+		632A9A352946F85700448073 /* SubType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A342946F85700448073 /* SubType.swift */; };
+		632A9A372946F86900448073 /* Attack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A362946F86900448073 /* Attack.swift */; };
+		632A9A392946F88700448073 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A382946F88700448073 /* Effect.swift */; };
+		632A9A3B2946F89E00448073 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A3A2946F89E00448073 /* Ability.swift */; };
+		632A9A3D2946FB3E00448073 /* BaseAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A3C2946FB3E00448073 /* BaseAPIProtocol.swift */; };
+		632A9A402946FE5600448073 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A3F2946FE5600448073 /* SecretKey.swift */; };
+		632A9A422946FEA000448073 /* EnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A412946FEA000448073 /* EnvironmentKey.swift */; };
+		632A9A442947065C00448073 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A432947065C00448073 /* APIManager.swift */; };
+		632A9A4829470DA000448073 /* CardRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A4729470DA000448073 /* CardRequest.swift */; };
+		632A9A4A29470E8D00448073 /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A4929470E8D00448073 /* CardRepository.swift */; };
+		632A9A4F29471A7800448073 /* CardListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A4E29471A7800448073 /* CardListResponse.swift */; };
+		632A9A5129471D9C00448073 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A5029471D9C00448073 /* ImageSize.swift */; };
+		632A9A57294723E300448073 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A56294723E300448073 /* HomeView.swift */; };
+		632A9A59294723EF00448073 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A58294723EF00448073 /* SearchView.swift */; };
+		632A9A5B294723FE00448073 /* NotifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A5A294723FE00448073 /* NotifyView.swift */; };
+		632A9A5D2947240B00448073 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A5C2947240B00448073 /* SettingView.swift */; };
+		632A9A5F294728FA00448073 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A5E294728FA00448073 /* SearchViewModel.swift */; };
+		632A9A6229472A7200448073 /* SearchCardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A6129472A7200448073 /* SearchCardRow.swift */; };
+		632A9A6629472C4500448073 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A6529472C4500448073 /* ImageView.swift */; };
+		632A9A6829472C8B00448073 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632A9A6729472C8B00448073 /* ImageViewModel.swift */; };
+		632A9A6B29472CC500448073 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 632A9A6A29472CC500448073 /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		632A9A152946EC3400448073 /* PokemonCardSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonCardSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632A9A182946EC3400448073 /* PokemonCardSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardSwiftUIApp.swift; sourceTree = "<group>"; };
-		632A9A1A2946EC3400448073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		632A9A1C2946EC3600448073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632A9A1F2946EC3600448073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		632A9A2E2946F40800448073 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		632A9A302946F82A00448073 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		632A9A322946F84100448073 /* SuperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperType.swift; sourceTree = "<group>"; };
+		632A9A342946F85700448073 /* SubType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubType.swift; sourceTree = "<group>"; };
+		632A9A362946F86900448073 /* Attack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attack.swift; sourceTree = "<group>"; };
+		632A9A382946F88700448073 /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		632A9A3A2946F89E00448073 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		632A9A3C2946FB3E00448073 /* BaseAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProtocol.swift; sourceTree = "<group>"; };
+		632A9A3F2946FE5600448073 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
+		632A9A412946FEA000448073 /* EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKey.swift; sourceTree = "<group>"; };
+		632A9A432947065C00448073 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		632A9A4729470DA000448073 /* CardRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRequest.swift; sourceTree = "<group>"; };
+		632A9A4929470E8D00448073 /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		632A9A4E29471A7800448073 /* CardListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListResponse.swift; sourceTree = "<group>"; };
+		632A9A5029471D9C00448073 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
+		632A9A56294723E300448073 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		632A9A58294723EF00448073 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		632A9A5A294723FE00448073 /* NotifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyView.swift; sourceTree = "<group>"; };
+		632A9A5C2947240B00448073 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		632A9A5E294728FA00448073 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		632A9A6129472A7200448073 /* SearchCardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCardRow.swift; sourceTree = "<group>"; };
+		632A9A6529472C4500448073 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		632A9A6729472C8B00448073 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632A9A282946F2D400448073 /* Alamofire in Frameworks */,
+				632A9A6B29472CC500448073 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +99,12 @@
 		632A9A172946EC3400448073 /* PokemonCardSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				632A9A182946EC3400448073 /* PokemonCardSwiftUIApp.swift */,
-				632A9A1A2946EC3400448073 /* ContentView.swift */,
+				632A9A4529470D6500448073 /* Networking */,
+				632A9A3E2946FE3700448073 /* Application */,
+				632A9A2C2946F3C300448073 /* UI */,
+				632A9A2B2946F39C00448073 /* Repositories */,
+				632A9A2A2946F38300448073 /* Utilities */,
+				632A9A292946F37D00448073 /* Models */,
 				632A9A1C2946EC3600448073 /* Assets.xcassets */,
 				632A9A1E2946EC3600448073 /* Preview Content */,
 			);
@@ -65,6 +117,152 @@
 				632A9A1F2946EC3600448073 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		632A9A292946F37D00448073 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A2E2946F40800448073 /* Card.swift */,
+				632A9A302946F82A00448073 /* CardType.swift */,
+				632A9A322946F84100448073 /* SuperType.swift */,
+				632A9A342946F85700448073 /* SubType.swift */,
+				632A9A362946F86900448073 /* Attack.swift */,
+				632A9A382946F88700448073 /* Effect.swift */,
+				632A9A3A2946F89E00448073 /* Ability.swift */,
+				632A9A5029471D9C00448073 /* ImageSize.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		632A9A2A2946F38300448073 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A3C2946FB3E00448073 /* BaseAPIProtocol.swift */,
+				632A9A432947065C00448073 /* APIManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		632A9A2B2946F39C00448073 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A4929470E8D00448073 /* CardRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		632A9A2C2946F3C300448073 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A182946EC3400448073 /* PokemonCardSwiftUIApp.swift */,
+				632A9A6329472C2B00448073 /* Common */,
+				632A9A2D2946F3C900448073 /* Scenes */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		632A9A2D2946F3C900448073 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A522947239F00448073 /* Home */,
+				632A9A53294723A800448073 /* Search */,
+				632A9A54294723B300448073 /* Notify */,
+				632A9A55294723D000448073 /* Setting */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		632A9A3E2946FE3700448073 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A3F2946FE5600448073 /* SecretKey.swift */,
+				632A9A412946FEA000448073 /* EnvironmentKey.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		632A9A4529470D6500448073 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A4D29471A5A00448073 /* Responses */,
+				632A9A4629470D7200448073 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		632A9A4629470D7200448073 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A4729470DA000448073 /* CardRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		632A9A4D29471A5A00448073 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A4E29471A7800448073 /* CardListResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		632A9A522947239F00448073 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A56294723E300448073 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		632A9A53294723A800448073 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A6029472A5500448073 /* Component */,
+				632A9A58294723EF00448073 /* SearchView.swift */,
+				632A9A5E294728FA00448073 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		632A9A54294723B300448073 /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A5A294723FE00448073 /* NotifyView.swift */,
+			);
+			path = Notify;
+			sourceTree = "<group>";
+		};
+		632A9A55294723D000448073 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A5C2947240B00448073 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		632A9A6029472A5500448073 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A6129472A7200448073 /* SearchCardRow.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		632A9A6329472C2B00448073 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A6429472C3A00448073 /* ImageView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		632A9A6429472C3A00448073 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				632A9A6529472C4500448073 /* ImageView.swift */,
+				632A9A6729472C8B00448073 /* ImageViewModel.swift */,
+			);
+			path = ImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +281,10 @@
 			dependencies = (
 			);
 			name = PokemonCardSwiftUI;
+			packageProductDependencies = (
+				632A9A272946F2D400448073 /* Alamofire */,
+				632A9A6A29472CC500448073 /* Nuke */,
+			);
 			productName = PokemonCardSwiftUI;
 			productReference = 632A9A152946EC3400448073 /* PokemonCardSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +313,10 @@
 				Base,
 			);
 			mainGroup = 632A9A0C2946EC3400448073;
+			packageReferences = (
+				632A9A262946F2D400448073 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				632A9A6929472CC500448073 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 632A9A162946EC3400448073 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +343,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632A9A1B2946EC3400448073 /* ContentView.swift in Sources */,
+				632A9A59294723EF00448073 /* SearchView.swift in Sources */,
+				632A9A422946FEA000448073 /* EnvironmentKey.swift in Sources */,
+				632A9A3D2946FB3E00448073 /* BaseAPIProtocol.swift in Sources */,
+				632A9A3B2946F89E00448073 /* Ability.swift in Sources */,
+				632A9A5129471D9C00448073 /* ImageSize.swift in Sources */,
+				632A9A5B294723FE00448073 /* NotifyView.swift in Sources */,
+				632A9A6829472C8B00448073 /* ImageViewModel.swift in Sources */,
+				632A9A332946F84100448073 /* SuperType.swift in Sources */,
+				632A9A312946F82A00448073 /* CardType.swift in Sources */,
+				632A9A4F29471A7800448073 /* CardListResponse.swift in Sources */,
+				632A9A372946F86900448073 /* Attack.swift in Sources */,
+				632A9A4A29470E8D00448073 /* CardRepository.swift in Sources */,
+				632A9A4829470DA000448073 /* CardRequest.swift in Sources */,
+				632A9A6629472C4500448073 /* ImageView.swift in Sources */,
+				632A9A5F294728FA00448073 /* SearchViewModel.swift in Sources */,
+				632A9A392946F88700448073 /* Effect.swift in Sources */,
+				632A9A6229472A7200448073 /* SearchCardRow.swift in Sources */,
+				632A9A402946FE5600448073 /* SecretKey.swift in Sources */,
+				632A9A2F2946F40800448073 /* Card.swift in Sources */,
+				632A9A442947065C00448073 /* APIManager.swift in Sources */,
+				632A9A352946F85700448073 /* SubType.swift in Sources */,
 				632A9A192946EC3400448073 /* PokemonCardSwiftUIApp.swift in Sources */,
+				632A9A57294723E300448073 /* HomeView.swift in Sources */,
+				632A9A5D2947240B00448073 /* SettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +567,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		632A9A262946F2D400448073 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		632A9A6929472CC500448073 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		632A9A272946F2D400448073 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 632A9A262946F2D400448073 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		632A9A6A29472CC500448073 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 632A9A6929472CC500448073 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 632A9A0D2946EC3400448073 /* Project object */;
 }
