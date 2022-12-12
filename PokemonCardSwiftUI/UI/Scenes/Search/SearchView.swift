@@ -9,17 +9,30 @@ import SwiftUI
 
 struct SearchView: View {
     @ObservedObject var viewModel: SearchViewModel
+    @State private var isConditionModal = false
+    
     var body: some View {
         NavigationView {
-            ZStack {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(viewModel.cardList, id: \.hashValue) { card in
-                            SearchCardRow(card: card)
+            ZStack(alignment: .top) {
+                SearchConditionButtonView()
+                    .onTapSearchButton {
+                        isConditionModal = true
+                    }
+                    .fullScreenCover(isPresented: $isConditionModal){
+                        SearchConditionView(isActive: $isConditionModal)
+                    }
+                VStack {
+                    Spacer().frame(height: 80)
+                    ScrollView {
+                        LazyVStack {
+                            ForEach(viewModel.cardList, id: \.hashValue) { card in
+                                SearchCardRow(card: card)
+                            }
                         }
                     }
+                    .navigationTitle("検索")
                 }
-                .navigationTitle("検索")
+                
             }
         }
         .onAppear {
