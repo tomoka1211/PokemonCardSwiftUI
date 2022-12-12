@@ -85,4 +85,4 @@ iOSInjectionProject/
 *.generated.swift
 
 # git-crypt
-**/EnvironmentKey.swift
+**/SecretKey.swift
