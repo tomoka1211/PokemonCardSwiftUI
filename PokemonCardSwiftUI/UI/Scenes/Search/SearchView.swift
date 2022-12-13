@@ -19,7 +19,7 @@ struct SearchView: View {
                         isConditionModal = true
                     }
                     .fullScreenCover(isPresented: $isConditionModal){
-                        SearchConditionView(isActive: $isConditionModal)
+                        SearchConditionView(viewModel: .init(searchCondition: viewModel.searchCondition), isActive: $isConditionModal)
                     }
                 VStack {
                     Spacer().frame(height: 80)
