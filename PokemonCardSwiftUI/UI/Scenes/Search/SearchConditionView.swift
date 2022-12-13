@@ -11,21 +11,21 @@ struct SearchConditionView: View {
     @ObservedObject var viewModel: SearchConditionViewModel
     @Binding var isActive: Bool
     @State var isShowingPicker: Bool = false
-    @State var selectedIndex: Int = 0
+    @State var selectedTypeKey: Int? = nil
     
     @State var selectCardIndex: Int = 0
     var keyValues: [KeyValue] = [
-        KeyValue(key: "11", value: "ドラゴン"),
-        KeyValue(key: "22", value: "エスパー"),
-        KeyValue(key: "33", value: "草"),
-        KeyValue(key: "44", value: "炎"),
-        KeyValue(key: "55", value: "ノーマル"),
-        KeyValue(key: "66", value: "はがね"),
+        KeyValue(key: 1, value: "ドラゴン"),
+        KeyValue(key: 2, value: "エスパー"),
+        KeyValue(key: 3, value: "草"),
+        KeyValue(key: 4, value: "炎"),
+        KeyValue(key: 5, value: "ノーマル"),
+        KeyValue(key: 6, value: "はがね"),
     ]
     
     var cardTypes: [KeyValue] = [
-        KeyValue(key: "11", value: "ポケモン"),
-        KeyValue(key: "22", value: "遊戯王")
+        KeyValue(key: 1, value: "ポケモン"),
+        KeyValue(key: 2, value: "遊戯王")
     ]
     
     var body: some View {
@@ -44,7 +44,7 @@ struct SearchConditionView: View {
                                 }) {
                                     VStack {
                                         HStack {
-                                            Text("\(keyValues[selectedIndex].value)タイプ")
+                                            Text("\(keyValues.first { $0.key == selectedTypeKey }?.value ?? "未選択")タイプ")
                                             Spacer().frame(width: 5)
                                             Image(systemName: "arrowtriangle.down")
                                         }
@@ -61,7 +61,7 @@ struct SearchConditionView: View {
                             Text("カードタイプ")
                                 .font(.system(size: 18))
                                 .fontWeight(.medium)
-                            SearchConditionRadioSelect(selectedIndex: $selectCardIndex, array: cardTypes)
+                            SearchConditionRadioSelect(selectedKey: $viewModel.cardType, array: cardTypes)
                         }
                         Spacer()
                     }
@@ -72,7 +72,7 @@ struct SearchConditionView: View {
                     .padding(15)
                     VStack {
                         Spacer()
-                        CustomPickerView(isActive: $isShowingPicker, selectedIndex: $selectedIndex, array: keyValues)
+                        CustomPickerView(isActive: $isShowingPicker, selectedKey: $selectedTypeKey, array: keyValues)
                             .animation(.easeOut, value: isShowingPicker)
                             .offset(y: isShowingPicker ? geometry.safeAreaInsets.bottom : CustomPickerView.viewHeight + geometry.safeAreaInsets.bottom)
                             .frame(height: CustomPickerView.viewHeight)
@@ -99,6 +99,6 @@ struct SearchConditionView: View {
 struct SearchConditionView_Previews: PreviewProvider {
     @State static var isActive = true
     static var previews: some View {
-        SearchConditionView(viewModel: SearchConditionViewModel(searchCondition: SearchCondition(cardType: "pokemon", pokemonType: "エネルギー")), isActive: $isActive)
+        SearchConditionView(viewModel: SearchConditionViewModel(searchCondition: SearchCondition(cardType: 1, pokemonType: 1)), isActive: $isActive)
     }
 }

@@ -8,6 +8,6 @@
 import Foundation
 
 struct SearchCondition: Codable, Hashable {
-    var cardType: String
-    var pokemonType: String
+    var cardType: Int
+    var pokemonType: Int
 }

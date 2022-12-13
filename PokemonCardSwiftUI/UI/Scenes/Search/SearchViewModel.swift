@@ -10,7 +10,7 @@ import Combine
 
 final class SearchViewModel: ObservableObject {
     @Published var cardList = [Card]()
-    @Published var searchCondition = SearchCondition(cardType: "ポケモン", pokemonType: "エネルギー")
+    @Published var searchCondition = SearchCondition(cardType: 1, pokemonType: 1)
     
     var cancellables = Set<AnyCancellable>()
     var repository = CardRepository()

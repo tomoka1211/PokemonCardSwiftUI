@@ -8,6 +8,6 @@
 import Foundation
 
 struct KeyValue: Hashable {
-    var key: String
+    var key: Int
     var value: String
 }

@@ -10,8 +10,8 @@ import Combine
 
 final class SearchConditionViewModel: ObservableObject {
     @Published var searchCondition: SearchCondition
-    @Published var cardType: String
-    @Published var pokemonType: String
+    @Published var cardType: Int
+    @Published var pokemonType: Int
     
     var cancellables = Set<AnyCancellable>()
     var repository = CardRepository()
